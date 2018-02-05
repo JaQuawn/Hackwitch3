@@ -14,6 +14,7 @@
 		7FC1C32D2028ED23003471DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1C32B2028ED23003471DE /* LaunchScreen.storyboard */; };
 		7FC1C3382028ED23003471DE /* Hackwitch3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3372028ED23003471DE /* Hackwitch3Tests.swift */; };
 		7FC1C3432028ED23003471DE /* Hackwitch3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3422028ED23003471DE /* Hackwitch3UITests.swift */; };
+		7FC1C3532028F3E4003471DE /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3522028F3E4003471DE /* ViewControllerTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7FC1C33E2028ED23003471DE /* Hackwitch3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hackwitch3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC1C3422028ED23003471DE /* Hackwitch3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackwitch3UITests.swift; sourceTree = "<group>"; };
 		7FC1C3442028ED23003471DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FC1C3522028F3E4003471DE /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7FC1C3212028ED23003471DE /* Hackwitch3 */ = {
 			isa = PBXGroup;
 			children = (
+				7FC1C3522028F3E4003471DE /* ViewControllerTwo.swift */,
 				7FC1C3222028ED23003471DE /* AppDelegate.swift */,
 				7FC1C3242028ED23003471DE /* ViewController.swift */,
 				7FC1C3262028ED23003471DE /* Main.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				7FC1C3252028ED23003471DE /* ViewController.swift in Sources */,
 				7FC1C3232028ED23003471DE /* AppDelegate.swift in Sources */,
+				7FC1C3532028F3E4003471DE /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
