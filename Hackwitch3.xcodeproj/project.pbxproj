@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F383137205721F8007C331D /* bucketListVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F383136205721F8007C331D /* bucketListVCViewController.swift */; };
+		7F3831392057223A007C331D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3831382057223A007C331D /* WeatherViewController.swift */; };
+		7F38313B205722B3007C331D /* myProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38313A205722B3007C331D /* myProfileViewController.swift */; };
 		7FC1C3232028ED23003471DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3222028ED23003471DE /* AppDelegate.swift */; };
-		7FC1C3252028ED23003471DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3242028ED23003471DE /* ViewController.swift */; };
 		7FC1C3282028ED23003471DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1C3262028ED23003471DE /* Main.storyboard */; };
 		7FC1C32A2028ED23003471DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1C3292028ED23003471DE /* Assets.xcassets */; };
 		7FC1C32D2028ED23003471DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC1C32B2028ED23003471DE /* LaunchScreen.storyboard */; };
 		7FC1C3382028ED23003471DE /* Hackwitch3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3372028ED23003471DE /* Hackwitch3Tests.swift */; };
 		7FC1C3432028ED23003471DE /* Hackwitch3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3422028ED23003471DE /* Hackwitch3UITests.swift */; };
-		7FC1C3532028F3E4003471DE /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1C3522028F3E4003471DE /* ViewControllerTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F383136205721F8007C331D /* bucketListVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bucketListVCViewController.swift; sourceTree = "<group>"; };
+		7F3831382057223A007C331D /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		7F38313A205722B3007C331D /* myProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myProfileViewController.swift; sourceTree = "<group>"; };
 		7FC1C31F2028ED23003471DE /* Hackwitch3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackwitch3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC1C3222028ED23003471DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FC1C3242028ED23003471DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FC1C3272028ED23003471DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FC1C3292028ED23003471DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FC1C32C2028ED23003471DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		7FC1C33E2028ED23003471DE /* Hackwitch3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hackwitch3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC1C3422028ED23003471DE /* Hackwitch3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackwitch3UITests.swift; sourceTree = "<group>"; };
 		7FC1C3442028ED23003471DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FC1C3522028F3E4003471DE /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 		7FC1C3212028ED23003471DE /* Hackwitch3 */ = {
 			isa = PBXGroup;
 			children = (
-				7FC1C3522028F3E4003471DE /* ViewControllerTwo.swift */,
+				7F38313A205722B3007C331D /* myProfileViewController.swift */,
 				7FC1C3222028ED23003471DE /* AppDelegate.swift */,
-				7FC1C3242028ED23003471DE /* ViewController.swift */,
+				7F3831382057223A007C331D /* WeatherViewController.swift */,
 				7FC1C3262028ED23003471DE /* Main.storyboard */,
+				7F383136205721F8007C331D /* bucketListVCViewController.swift */,
 				7FC1C3292028ED23003471DE /* Assets.xcassets */,
 				7FC1C32B2028ED23003471DE /* LaunchScreen.storyboard */,
 				7FC1C32E2028ED23003471DE /* Info.plist */,
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FC1C3252028ED23003471DE /* ViewController.swift in Sources */,
+				7F3831392057223A007C331D /* WeatherViewController.swift in Sources */,
 				7FC1C3232028ED23003471DE /* AppDelegate.swift in Sources */,
-				7FC1C3532028F3E4003471DE /* ViewControllerTwo.swift in Sources */,
+				7F38313B205722B3007C331D /* myProfileViewController.swift in Sources */,
+				7F383137205721F8007C331D /* bucketListVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

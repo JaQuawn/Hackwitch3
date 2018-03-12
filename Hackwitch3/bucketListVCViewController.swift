@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  bucketListVCViewController.swift
 //  Hackwitch3
 //
-//  Created by CM Student on 2/5/18.
+//  Created by CM Student on 3/12/18.
 //  Copyright © 2018 CM Student. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,12 +23,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.firstLabel.text = "about"
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return carArray.count

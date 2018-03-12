@@ -1,14 +1,14 @@
 //
-//  ViewControllerTwo.swift
+//  WeatherViewController.swift
 //  Hackwitch3
 //
-//  Created by CM Student on 2/5/18.
+//  Created by CM Student on 3/12/18.
 //  Copyright © 2018 CM Student. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerTwo: UIViewController {
+class WeatherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
