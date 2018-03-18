@@ -10,8 +10,14 @@ import UIKit
 
 class WeatherViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var displayTextlabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.displayTextlabel.text=""
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +25,14 @@ class WeatherViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func setLabelButtonPressed(_ sender: Any) {
+        
+        let celsius: Float
+        let fahrenheit: Float = 50
+        celsius = (fahrenheit-32) * 5/9
+        print ("(celsius) degrees celsius")
+       
     }
     
 

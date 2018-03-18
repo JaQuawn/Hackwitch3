@@ -19,9 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgE-Bn-gNl">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <rect key="frame" x="133" y="269" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="setLabelButtonPressed:" destination="R38-bf-N8v" eventType="touchUpInside" id="10H-sC-v9F"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AV-6t-RUd">
                                 <rect key="frame" x="139" y="323" width="42" height="21"/>
@@ -30,7 +33,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvZ-eC-mVs">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Degrees Fahrenheit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvZ-eC-mVs">
                                 <rect key="frame" x="76" y="171" width="171" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -43,7 +46,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Weather Converter" id="UpM-Z5-Q2l"/>
                     <connections>
+                        <outlet property="displayTextlabel" destination="5AV-6t-RUd" id="2e5-xQ-e4u"/>
                         <outlet property="searchDisplayController" destination="lm6-q3-lqr" id="B1J-Wr-9Wj"/>
+                        <outlet property="textField" destination="dvZ-eC-mVs" id="nfe-fO-YBl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgQ-N1-iCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -80,6 +85,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DWi-u4-kyB" id="cWK-dQ-QdR"/>
+                                    <outlet property="delegate" destination="DWi-u4-kyB" id="0CC-Ar-2om"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

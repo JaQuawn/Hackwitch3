@@ -13,9 +13,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var carArray = [ " Visit Africa", "Sky Dive", " Swim with Sharks", "Invest in my Community"]
+     var ListArray = [ " Visit Africa", "Sky Dive", " Swim with Sharks", "Invest in my Community"]
     
     override func viewDidLoad() {
+        self.tableView.dataSource = self
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -28,15 +29,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return carArray.count
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ListArray.count
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        let Text = carArray[indexPath.row]
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
+        let Text = ListArray[indexPath.row]
         cell.textLabel?.text = Text
         return cell
     }
